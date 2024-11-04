@@ -21,7 +21,7 @@ with cols[1]:
 with cols[1]:
     with st.container(border=True):
         st.subheader('Afzet')
-        afzet = st.number_input('Afzet per week', step=1)
+        afzet = st.number_input('Afzet per week', step=1, min_value=1)
             
  
 output = sales_naar_bedrag(afmetingen=[afmeting1, afmeting2, afmeting3], gewicht=gewicht, afzet=afzet)            
