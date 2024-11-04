@@ -2,6 +2,7 @@ import streamlit as st
 from fun import sales_naar_bedrag
 
 st.title('Fulfilment kosten')
+st.write('voor Nederland')
 
 
     
