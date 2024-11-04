@@ -84,8 +84,10 @@ def klasse_en_afzet_naar_bedrag(klasse:str, afzet:int) -> dict:
         totaal = tarieven[1] * afzet
     elif afzet < 100:
         totaal = tarieven[2] * afzet
+        
     else:
-        return None
+        #return None
+        totaal = tarieven[2] * afzet
         
     return {'totaal':round(totaal,2), 'per_product':round(totaal / afzet,2)}  
 
