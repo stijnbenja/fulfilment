@@ -40,7 +40,7 @@ output = sales_naar_bedrag(afmetingen=[afmeting1, afmeting2, afmeting3], gewicht
 
 
 with st.container(border=True):
-    st.header('Fulfilment')
+    st.subheader('Fulfilment')
     col1, col2, col3 = st.columns(3)
 
 
@@ -50,7 +50,7 @@ col3.metric("Per product (€)", output['per_product'])
 
 
 with st.container(border=True):
-    st.header('Opslag')
+    st.subheader('Opslag')
     colk1, colk2, colk3 = st.columns(3)
 
 klasse = formaten_naar_klasse([afmeting1, afmeting2, afmeting3])
